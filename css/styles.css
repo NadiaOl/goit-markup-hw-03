@@ -5,6 +5,12 @@
   --additional-color: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -20,7 +26,7 @@ address {
 }
 
 img {
-  display: block;
+  display: flex;
 }
 
 button {
@@ -61,12 +67,12 @@ body {
 }
 
 .header {
-  width: 1200px;
+  width: 1600px;
   padding-top: 32px;
   padding-bottom: 32px;
   margin: 0px auto;
-  border-bottom-color: #ECECEC;
-  border-bottom-width: 2px;
+  display: flex;
+  border-bottom: 2px solid #ECECEC;
 }
 
 .header-logo,
@@ -141,7 +147,7 @@ body {
   width: 1600px;
   margin: 0 auto;
   margin-bottom: 94px;
-}
+  }
 
 .hero-title {
   font-weight: 900;
@@ -151,7 +157,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--additional-color);
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto;
   padding-top: 200px;
   margin-bottom: 30px;
@@ -162,23 +168,33 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
+
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+  justify-content: center;
+
   color: var(--additional-color);
   background-color: var(--link-color);
-  margin: 0 auto;
+ 
   width: 216px;
-  height: 50px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-right: 30px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  
+  border-width: 1px;
   border-radius: 4%;
   border-color: var(--link-color);
-  justify-content: center;
-}
+  }
 /* изменение цвета кнопки при ховере и фокусе нужно уточнить*/
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--link-color);
+  background-color: var(--additional-color);
+  border-color: var(--link-color);
   border-radius: 0%;
 }
 /* --------------------------ABOUT---------------------------- */
@@ -253,6 +269,11 @@ body {
   gap: 30px;
 }
 
+.team-item {
+  background-color: var(--additional-color);
+  padding-bottom: 30px;
+}
+
 /* -----------------------PAGE PORTFOLIO -----------------------*/
 
 .portfolio-selection-btn {
@@ -262,11 +283,43 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--title-color);
+  background-color: #F5F4FA;
+  margin: 0 auto;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border-width: 1px;
+  border-radius: 4%;
+  border-color: #F5F4FA;
 }
+
+
+
 .portfolio-selection-btn:hover,
 .portfolio-selection-btn:focus {
   color: var(--additional-color);
+  background-color: var(--link-color);
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 94px;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
 }
 
 .portfolio-title {
@@ -280,6 +333,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.portfolio-border {
+  display: inline-block;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  width: 370px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+    }
 
 /*------------------------FOOTER------------------------*/
 
@@ -289,6 +353,8 @@ body {
   height: 252px;
   margin: 0 auto;
   padding-top: 60px;
+  padding-right: 215px;
+  padding-bottom: 60px;
   padding-left: 215px;
 }
 
