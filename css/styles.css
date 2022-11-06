@@ -149,7 +149,7 @@ body {
   background-image: url(../images/Bg.jpg);
   height: 600px;
   margin: 0 auto;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .hero-title {
@@ -207,7 +207,9 @@ body {
 .about-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 /*------------------------ACTIVITY------------------------*/
@@ -240,7 +242,8 @@ body {
 .activity-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 /*------------------------TEAM------------------------*/
@@ -323,15 +326,15 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
-  margin-top: 94px;
+  padding-bottom: 34px;
+  padding-top: 94px;
 }
 
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-title {
