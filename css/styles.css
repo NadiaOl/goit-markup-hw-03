@@ -203,15 +203,15 @@ body {
 }
 
 /* --------------------------ABOUT---------------------------- */
-
-.about-list {
-  display: flex;
-  gap: 30px;
+.about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/*------------------------ACTIVITY------------------------*/
+.about-list {
+  display: flex;
+  gap: 30px;
+}
 
 .about-title {
   margin-bottom: 10px;
@@ -221,14 +221,20 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+.about-item {
+  flex-basis: 270px;
+}
 .about-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+/*------------------------ACTIVITY------------------------*/
 
+.activity {
+  padding-bottom: 94px;
+}
 .activity-title,
 .team-title {
   margin-bottom: 50px;
@@ -241,8 +247,6 @@ body {
 .activity-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
-  /* margin-bottom: 94px; */
 }
 
 /*------------------------TEAM------------------------*/
