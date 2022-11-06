@@ -70,8 +70,8 @@ body {
 }
 
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin: 0px auto;
   display: flex;
   border-bottom: 2px solid #ECECEC;
@@ -149,13 +149,13 @@ body {
   background-image: url(../images/Bg.jpg);
   height: 600px;
   margin: 0 auto;
-  /* margin-bottom: 94px; */
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   max-width: 696px;
   margin: 0 auto;
-  padding-top: 200px;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -209,7 +209,6 @@ body {
   gap: 30px;
   padding-top: 94px;
   padding-bottom: 94px;
-  /* margin-bottom: 94px; */
 }
 
 /*------------------------ACTIVITY------------------------*/
@@ -289,6 +288,10 @@ body {
 }
 
 /* -----------------------PAGE PORTFOLIO -----------------------*/
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .portfolio-selection-btn {
   display: flex;
@@ -326,8 +329,7 @@ body {
   display: flex;
   gap: 8px;
   justify-content: center;
-  padding-bottom: 34px;
-  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .portfolio-images {
@@ -372,9 +374,12 @@ body {
   background-color: #2f303a;
 }
 
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .footer-address-link {
   display: inline-block;
-  margin-bottom: 9px;
 
   color: var(--additional-color);
 
@@ -385,7 +390,6 @@ body {
 
 .footer-contact-link {
   display: inline-block;
-  margin-bottom: 9px;
 }
 
 .footer-contact-list,
